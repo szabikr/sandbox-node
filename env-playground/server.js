@@ -7,6 +7,7 @@ const requestListener = function (req, res) {
 }
 
 const server = http.createServer(requestListener);
-server.listen(process.env.PORT);
+const port = process.env.PORT || 9000;
+server.listen(port);
 
-console.log(`Server listening on port ${process.env.PORT} in ${process.env.NODE_ENV} environment ...`);
+console.log(`Server listening on port ${port} in ${process.env.NODE_ENV} environment ...`);

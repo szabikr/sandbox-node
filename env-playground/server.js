@@ -1,4 +1,2 @@
-const { PORT, NODE_ENV } = require('./config');
-
-console.log(`Running a ${NODE_ENV} environment`);
-console.log(`Your PORT is ${PORT}`);
+console.log(`Running a ${process.env.NODE_ENV} environment`);
+console.log(`Your PORT is ${process.env.PORT}`);

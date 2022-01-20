@@ -6,7 +6,10 @@
   "repository": "https://github.com/szabikr/sandbox-node",
   "author": "szabikr",
   "license": "MIT",
-  "dependencies": {
+  "scripts": {
+    "start:dev": "node -r dotenv/config server.js"
+  },
+  "devDependencies": {
     "dotenv": "^14.2.0"
   }
 }

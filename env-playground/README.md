@@ -2,6 +2,10 @@
 
 Learning to use environment variables.
 
+[The Twelve-Factor App guidance's third point](https://12factor.net/config) recommends loading all environment level configuration from and external source such as an env file.
+
+### Usage
+
 - Run by `$ node -r dotenv/config server.js` which reads environment variables from `.env` file
 
 Alternatively

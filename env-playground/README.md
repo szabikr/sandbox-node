@@ -15,7 +15,7 @@ Alternatively
 
 - Build docker image `$ docker build . -t <your username>/node-server`. `-t` flag lets you tag your image
 
-- Run docker image `$ docker run -p 9000:9000 -d szabikr/node-server`. `-d` runs the container in detached mode; `-p` flag redirects a public port to a private port inside the container
+- Run docker image `$ docker run -e NODE_ENV=dev -p 9000:9000 -d szabikr/node-server`. `-e` flag lets you specify environment variables when running the container; `-d` runs the container in detached mode; `-p` flag redirects a public port to a private port inside the container
 
 ### Tools
 - [DotENV VS Code extension](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv&wt.mc_id=node-nodecollection-jopapa)

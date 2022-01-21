@@ -8,6 +8,8 @@ const requestListener = function (req, res) {
 
 const server = http.createServer(requestListener);
 const port = process.env.PORT || 9000;
-server.listen(port);
+const host = process.env.HOST || '0.0.0.0';
 
-console.log(`Server listening on port ${port} in ${process.env.NODE_ENV} environment ...`);
+server.listen(port, host, () => {
+  console.log(`Server listening on ${host}, port ${port} in ${process.env.NODE_ENV} environment ...`);
+});
